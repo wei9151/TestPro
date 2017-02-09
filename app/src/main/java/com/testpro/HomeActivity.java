@@ -141,7 +141,7 @@ public class HomeActivity extends Activity {
         list.add("100");
         list.add("101");
         list.add("102");
-
+        //测试集合的使用
         Observable<String> observable1 = Observable.merge(Observable.just("500", "1235", "99980"), Observable.from(list));
         s1 = observable1.map(new Func1<String, Integer>() {
             @Override
