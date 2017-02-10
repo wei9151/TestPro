@@ -31,7 +31,6 @@ public class HomeActivity extends Activity {
 
     private TextView tv_1, tv_2;
     private Subscription s1;
-
     private Float[] fArray = {1.5f, 2f, 3.5f, 4f};
 
     @Override
@@ -71,7 +70,7 @@ public class HomeActivity extends Activity {
         findViewById(R.id.tv_5).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("初始设置： 点击了tv_5  呵呵呵呵 ----------");
+                System.out.println("初始设置： 点击了tv_5----------");
             }
         });
 
