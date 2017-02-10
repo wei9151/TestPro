@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.testpro.baselib.MyClass;
 
 /**
- * 测试界面
+ * 测试界面2
  */
 public class SecondActivity extends Activity {
 
@@ -20,7 +20,6 @@ public class SecondActivity extends Activity {
         setContentView(R.layout.activity_second);
 
         tv_1 = (TextView) findViewById(R.id.tv_1);
-
         tv_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,10 +28,8 @@ public class SecondActivity extends Activity {
         });
     }
 
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
     }
 }
