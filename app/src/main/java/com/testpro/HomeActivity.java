@@ -25,7 +25,7 @@ import rx.functions.Func2;
 import rx.schedulers.Schedulers;
 
 /**
- * Rxjava Demo测试界面
+ * Rxjava Demo测试界面--主分支1
  */
 public class HomeActivity extends Activity {
 
