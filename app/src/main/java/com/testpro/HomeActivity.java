@@ -38,16 +38,16 @@ public class HomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        bindRippleClicks();
+
         tv_1 = (TextView) findViewById(R.id.tv_1);
         tv_2 = (TextView) findViewById(R.id.tv_2);
-
         tv_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 click2();
             }
         });
-
         findViewById(R.id.tv_3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,6 +78,26 @@ public class HomeActivity extends Activity {
             @Override
             public void onClick(View v) {
                  startActivity(new Intent(HomeActivity.this, SecondActivity.class));
+            }
+        });
+
+
+    }
+
+    private void bindRippleClicks() {
+        findViewById(R.id.tv_r0).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
+        findViewById(R.id.tv_r1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
+        findViewById(R.id.tv_r2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
             }
         });
     }

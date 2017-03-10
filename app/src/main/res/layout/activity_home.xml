@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:weightSum="1">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_1"
@@ -13,6 +12,39 @@
         android:layout_marginTop="20dp"
         android:text="测试界面1"
         android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_r0"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:text="测试水波纹0"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_r1"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_selector1"
+        android:gravity="center"
+        android:text="测试水波纹1"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_r2"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_selector2"
+        android:gravity="center"
+        android:text="测试水波纹2"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
 
 
     <TextView
@@ -29,12 +61,12 @@
     <TextView
         android:id="@+id/tv_3"
         android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_height="60dp"
         android:layout_marginTop="20dp"
         android:background="#ff7c11"
         android:gravity="center"
         android:text="点击3"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:textSize="16dp" />
 
     <TextView

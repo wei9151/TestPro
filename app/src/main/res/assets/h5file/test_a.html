@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>Document</title>
+
+	<script type="text/javascript">
+	function getBrowserInfo() {
+		var agent = navigator.userAgent.toLowerCase();
+		// alert(agent);
+		
+		var regStr_ie = /msie [\d.]+;/gi;
+		var regStr_ff = /firefox\/[\d.]+/gi;
+		var regStr_chrome = /chrome\/[\d.]+/gi;
+		var regStr_saf = /safari\/[\d.]+/gi;
+		//IE
+		if (agent.indexOf("msie") > 0) {
+			return agent.match(regStr_ie);
+		}
+
+		//firefox
+		if (agent.indexOf("firefox") > 0) {
+			return agent.match(regStr_ff);
+		}
+
+		//Chrome
+		if (agent.indexOf("chrome") > 0) {
+			return agent.match(regStr_chrome);
+		}
+
+		//Safari
+		if (agent.indexOf("safari") > 0 && agent.indexOf("chrome") < 0) {
+			return agent.match(regStr_saf);
+		}
+
+	}
+
+	var myVideo = document.getElementById("video1");
+
+	function playPause() {
+		if (myVideo.paused)
+			myVideo.play();
+		else
+			myVideo.pause();
+	}
+
+	</script>
+</head>
+
+
+<body>
+	 
+ 	<button onclick="playPause()">播放/暂停</button> 
+	<video id="video1" width="400" height="200" controls="controls">
+  		<source src="duan.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video >
+
+	<span class="c1">
+		测试一下
+	</span>
+	    <ul class="c2"></ul>
+	<ul id="u111" class="c2"></ul>
+
+	<div>
+		<header>
+			<ul>
+				<li><a href="" onclick="alert(getBrowserInfo())">点击显示浏览器版本</a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</header>
+		<footer>
+			<p></p>
+		</footer>
+	</div>
+
+</body>
+</html>
