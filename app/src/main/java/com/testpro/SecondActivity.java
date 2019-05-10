@@ -10,7 +10,7 @@ import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 /**
- * 测试界面2
+ * 测试界面2 -- 05 - 10提交
  */
 public class SecondActivity extends Activity {
 
